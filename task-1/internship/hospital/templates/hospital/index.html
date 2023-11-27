@@ -9,7 +9,7 @@
             <p>Your specialization: {{ profile.specialization }}</p>
             <!-- Add more content specific to doctors -->
         {% else %}
-            <h2>Welcome, Saranya devi!</h2>
+            <h2>Welcome, {{ profile.user.first_name }} {{ profile.user.last_name }}!</h2>
             <!-- Add more content specific to patients -->
         {% endif %}
     {% else %}
