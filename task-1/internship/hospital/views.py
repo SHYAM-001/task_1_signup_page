@@ -9,8 +9,6 @@ from .models import PatientProfile,DoctorProfile
 
 from django.contrib.auth.decorators import login_required
 
-def home(request):
-    return render(request,"hospital/index.html")
 from django.shortcuts import get_object_or_404
 
 def index(request):
